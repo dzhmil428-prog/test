@@ -1,5 +1,13 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/site.html" }
+  ],
+  "headers": [
+    {
+      "source": "/site.html",
+      "headers": [
+        { "key": "Content-Type", "value": "text/html; charset=utf-8" }
+      ]
+    }
   ]
 }
